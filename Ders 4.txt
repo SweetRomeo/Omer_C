@@ -1,0 +1,31 @@
+
+/*------------------------------------------------------------------------------
+Klavyeden girilen bir sayının basamak sayısını geri döndüren countDigits
+ isimli fonksiyonu yazınız.
+ 123 -> 3
+ 0 -> 1
+ C dilinde 0 false yani yanlışı ifade
+--------------------------------------------------------------------------*/
+#include <stdbool.h>
+#include <stdio.h>
+#include <stdlib.h>
+
+int countDigits(int val)//123
+{
+    int count = 0;
+    do
+    {
+        val/=10;
+        count++;
+    }while(val);
+    return count;
+
+}
+
+int main()
+{
+    int val;
+    printf("Bir sayi giriniz?\n");
+    scanf("%d",&val);
+    printf("%d sayisinin basamak sayisi %d'dir.\n",val, countDigits(val));
+}
