@@ -1,0 +1,92 @@
+/*--------------------------------------------------------
+Diamond sorusunun bir çözümü 
+--------------------------------------------------------*/
+#include <stdio.h>
+#include <stdbool.h>
+
+void printDiamond(int n)
+{
+    bool flag = true;
+    int x = 0;
+
+    for(int k = 0;k < 2 * n - 1;++k){ //for(;;)
+        for(int i = 0;i < n - x - 1;++i)
+            printf(" ");
+        for(int i = 0;i < 2 * x + 1;++i)
+            printf("*");
+        if(x == n - 1)
+            flag = false;
+        if(flag)
+            ++x;
+        else
+            --x;
+        //if(x < 0)
+            //break;
+        printf("\n");
+    }
+}
+
+int main()
+{
+    int n;
+    printf("Enter n?");
+    scanf("%d",&n);
+    printDiamond(n);
+}
+//------------------------------------------------
+#include <stdio.h>
+#include <stdlib.h>
+#include <stdbool.h>
+
+void displayDuration(long totalSec)
+{
+    if(!totalSec)
+    {
+        printf("adam gibi sayi gir lan!!");
+        exit(EXIT_FAILURE);
+    }
+    long second = totalSec % 60;
+    long minute = totalSec / 60 % 60;
+    long hour = totalSec / 3600;
+   /*
+    if(!second && minute && hour)
+    {
+        printf("%ld : %ld\n",hour,minute);
+    }
+    else if(second && !minute && hour)
+    {
+        printf("%ld : %ld\n",hour,minute);
+    }
+    */
+   if(!hour){
+
+   }
+   else {
+       printf("%02ld",hour);
+   }
+    if(!minute){
+
+    }
+    else{
+        !hour ?
+        printf(" %02ld",minute) :
+        printf(" : %02ld",minute);
+    }
+   if(!second)
+   {
+
+   }
+   else
+   {
+       !minute ? printf( "%02ld",second) :
+       printf(" : %02ld ",second);
+   }
+}
+
+int main()
+{
+    long totalSec;
+    printf("Enter Total Second?\n");
+    scanf("%ld",&totalSec);
+    displayDuration(totalSec);
+}
