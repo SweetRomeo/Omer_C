@@ -90,3 +90,34 @@ int main()
     scanf("%ld",&totalSec);
     displayDuration(totalSec);
 }
+/*--------------------------------------
+Homework-002
+Soru- 3
+
+ ----------------------------------------*/
+#include <stdio.h>
+#include <stdlib.h>
+#include <stdbool.h>
+#include <math.h>
+
+void printFactors(int val)
+{
+    int factor = 2;
+    while(val != 1){
+        if(val % factor == 0) {
+            printf("%d ", factor);
+            val /= factor;
+        }
+        else{
+            factor++;
+        }
+    }
+}
+
+int main()
+{
+    int val;
+    printf("Bir sayi giriniz?\n");
+    scanf("%d",&val);
+    printFactors(val);
+}
