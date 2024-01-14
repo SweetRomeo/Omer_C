@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdbool.h>
 
-bool isValidCoordinate(int x, int y)
+bool isValidCoordinate(const int x, const int y)
 {
     return x >= 0 && x < 12 && y >= 0 && y < 12;
 }
