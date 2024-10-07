@@ -1,10 +1,20 @@
 Git Commands
+HTTPS linki kullanılarak git üzerinden repo kopyalanabilir.
 git clone https://github.com/SweetRomeo/Omer_C.git
+Bu klonladığımız dosya master branchine sahip olduğu için kendi localimizde yeni bir branch oluşturmak gerekir.
+Bunu aşağıdaki komutlardan biri ile yapabiliriz:
+git branch master_omer_c
+git checkout -b master_omer_c
+git switch master_omer_c
 Klon yapıldıktan localde const ile ilgili değişiklik yapıldı.
 Ardından 
 git status
 komutu çalıştırılır.
-Sadece değişiklik olan dosya veya dosyaların tamamını ekleyebiliriz. 
+Sadece değişiklik olan dosya veya dosyaların tamamını ekleyebiliriz. Bu işlem aşağıdaki komut ile yapılabilir:
+git add --all (dosyaların tamamını eklemek için)
+git add <dosya uzantısı>
+Örnek 
+git add framework/trace/ConsoleApplication4.cpp
 Burada amaç git status ile görünen ve kırmızı renkte olan dosyaların eklenip yeşil hale gelmesidir.
 Yeşil olup olmadığını görmek
 git status komutu tekrar çalıştırılır.
