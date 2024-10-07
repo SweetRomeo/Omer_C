@@ -25,3 +25,13 @@ git commit -m "type of x has been changed from int to const int"
 git push --set-upstream origin <branch ismin>
 git push --set-upstream origin master_omer_cpp
 push işlemi yapıldıktan sonra pull request açılması mümkündür.
+Sıkça kullanıcağımız komutlar:
+git branch
+git checkout
+git status
+git switch
+git add
+git commit
+git push
+git pull 
+git clone
