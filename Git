@@ -1,3 +1,17 @@
 Git Commands
 git clone https://github.com/SweetRomeo/Omer_C.git
-
+Klon yapıldıktan localde const ile ilgili değişiklik yapıldı.
+Ardından 
+git status
+komutu çalıştırılır.
+Sadece değişiklik olan dosya veya dosyaların tamamını ekleyebiliriz. 
+Burada amaç git status ile görünen ve kırmızı renkte olan dosyaların eklenip yeşil hale gelmesidir.
+Yeşil olup olmadığını görmek
+git status komutu tekrar çalıştırılır.
+Ondan sonra commit yapılır:
+git commit -m "<commit mesajı>" 
+Örneğin:
+git commit -m "type of x has been changed from int to const int"
+git push --set-upstream origin <branch ismin>
+git push --set-upstream origin master_omer_cpp
+push işlemi yapıldıktan sonra pull request açılması mümkündür.
